@@ -1,7 +1,6 @@
 **GitOps** is a way of managing and automating the deployment and operation of software applications using Git as the single source of truth. In simple terms, it means that the entire state of your system, including both the application code and the configuration of the infrastructure it runs on, is stored in a Git repository.
 
-Following is an example of how components fit into GitOps workflow:
-components fits into the GitOps workflow, specifically in the context of managing a Kubernetes-based system.
+Following is an example of how components fit into GitOps workflow, specifically in the context of managing a Kubernetes-based system.
 
 **1) GitHub Actions:**
 
