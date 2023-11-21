@@ -18,12 +18,12 @@ components fits into the GitOps workflow, specifically in the context of managin
 **Role in GitOps:** A container registry is a centralized repository for storing and managing Docker images.
 **GitOps Use Case:** After building Docker images, GitOps involves pushing these images to a container registry (e.g., Docker Hub, Google Container Registry, or Azure Container Registry). The container registry serves as a versioned store for your images and enables easy retrieval by the Kubernetes cluster during deployment.
 
-**3) Flux CD:**
+**4) Flux CD:**
 
 **Role in GitOps:** Flux CD is a GitOps tool designed for Kubernetes. It ensures that the desired state stored in the Git repository is continuously applied to the Kubernetes cluster. Flux CD can be configured to monitor changes in the container registry and automatically update the Kubernetes manifests (YAML files) with the latest image references. This is a key feature of GitOps, where the entire deployment process is driven by changes to the Git repository.
 **GitOps Use Case:** Flux CD watches the Git repository for changes to the Kubernetes manifests and automatically syncs the changes to the cluster. In the context of images, Flux CD can be configured to detect changes in the container registry and trigger automatic updates to the Kubernetes deployment manifests, ensuring that the latest version of the application is deployed.
 
-**4) Kubernetes Cluster:**
+**5) Kubernetes Cluster:**
 
 **Role in GitOps:** Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
 **GitOps Use Case:** The Kubernetes cluster is where your applications run. In GitOps, the desired state of your applications is declared in Kubernetes manifests (YAML files) stored in the Git repository. Flux CD continuously monitors the Git repository for changes and automatically applies those changes to the Kubernetes cluster, ensuring that the actual state matches the declared state.
